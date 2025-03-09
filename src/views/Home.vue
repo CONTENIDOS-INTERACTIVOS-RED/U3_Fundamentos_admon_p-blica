@@ -1,51 +1,49 @@
 <template lang="pug">
-.curso-container.d-flex.flex-column.min-vh-100
-  .container.d-flex.flex-column.justify-content-center.flex-grow-1.px-0.px-md-2
-    div.home-content.d-flex.flex-column-reverse.flex-lg-column.p-4.p-lg-0
-      .bg-white
-        .row.g-0
-          //- Columna izquierda con imagen
-          .d-none.d-xl-block.d-xl-flex.mb-4.mb-md-0.col-md-4.col-xl-5.imagen-section
-            img.img-fluid.h-full(
-              src="@/assets/portada/banner.png"
-              alt="Estudiante virtual"
-              style="max-width: 672px;"
-            )
-          .d-block.d-lg-none.mx-auto.mb-4.mb-lg-0.col-md-8.col-lg-6.imagen-section
-            img.img-fluid.h-full(
-              src="@/assets/portada/banner-mobile.png"
-              alt="Estudiante virtual"
-              style="max-width: 672px;"
-            )
-          //- Columna derecha con información
-          .col-xl-7.info-section
-            .content-wrapper.px-lg-4.pt-lg-4.px-xxl-5.py-xxl-5.text-start
-              p.home-main-title UNIDAD {{ `${globalData.numeroUnidad}` }}
-              h1.home-title.mb-4 {{ globalData.tituloUnidad }}
-              p.descripcion.mb-4 Esta unidad, Desarrollo Físico y Motor en Niños y Adolescentes, explora los cambios corporales y habilidades motrices clave desde la niñez hasta la adolescencia. Los estudiantes comprenderán cómo factores como genética, nutrición y entorno influyen en el crecimiento y las transformaciones hormonales de la pubertad, lo cual les permitirá apoyar a los jóvenes en cada etapa de su desarrollo.
-
-              p.descripcion.mb-4.mb-lg-5.pb-lg-4.text-bold ¡El éxito está en cada esfuerzo que haces hoy!
-
-              .button-container.mt-auto
-                router-link.btn-iniciar.w-100.w-md-auto(:to="{ name: 'introduccion' }")
-                  .iniciar-btn-container.w-100.w-md-auto
-                    span.iniciar-btn-text INICIAR
-                    .icon
-                      i.fas.fa-chevron-right
-
-      //- Footer
-      footer.footer.bg-white
-        .container.px-4.py-3
-          .row.justify-content-start.align-items-center
-            .col-lg-auto
-              img.logo-footer(
-                src="@/assets/portada/logo-footer.png"
-                alt="Logo Tecnológica del Oriente"
+  .curso-container.d-flex.flex-column.min-vh-100
+    .container.d-flex.flex-column.justify-content-center.flex-grow-1.px-0.px-md-2
+      div.home-content.d-flex.flex-column-reverse.flex-lg-column.p-4.p-lg-0
+        .bg-white
+          .row.g-0
+            //- Columna izquierda con imagen
+            .d-none.d-xl-block.d-xl-flex.mb-4.mb-md-0.col-md-4.col-xl-5.imagen-section
+              img.img-fluid.h-full(
+                src="@/assets/portada/banner.png"
+                alt="Estudiante virtual"
+                style="max-width: 672px;"
               )
-            .col-lg.px-0.d-none.d-lg-block
-              p.footer-text.mb-0 Todo el contenido de este curso es propiedad intelectual de Corporación Tecnológica del Oriente y está protegido por derechos de autor. No puede ser reproducido, distribuido, modificado ni compartido sin su autorización por escrito.
-              
-</template>
+            .d-block.d-lg-none.mx-auto.mb-4.mb-lg-0.col-md-8.col-lg-6.imagen-section
+              img.img-fluid.h-full(
+                src="@/assets/portada/banner-mobile.png"
+                alt="Estudiante virtual"
+                style="max-width: 672px;"
+              )
+            //- Columna derecha con información
+            .col-xl-7.info-section
+              .content-wrapper.px-lg-4.pt-lg-4.px-xxl-5.py-xxl-5.text-start
+                p.home-main-title UNIDAD {{ `${globalData.numeroUnidad}` }}
+                h1.home-title.mb-4 {{ globalData.tituloUnidad }}
+                p.descripcion.mb-4 La gobernanza y la gestión de redes en la administración pública permiten la colaboración entre el Estado, el sector privado y la sociedad civil para optimizar recursos y fortalecer la transparencia. La gestión pública puede basarse en procesos, optimizando procedimientos, o en resultados, enfocándose en el impacto social. La innovación mejora la eficiencia y accesibilidad de los servicios, mientras que la ética garantiza transparencia y confianza ciudadana. En Colombia, la descentralización y herramientas como SINERGIA han optimizado la gestión gubernamental, promoviendo participación y eficiencia en la ejecución de políticas públicas.
+  
+                .button-container.mt-auto
+                  router-link.btn-iniciar.w-100.w-md-auto(:to="{ name: 'introduccion' }")
+                    .iniciar-btn-container.w-100.w-md-auto
+                      span.iniciar-btn-text INICIAR
+                      .icon
+                        i.fas.fa-chevron-right
+  
+        //- Footer
+        footer.footer.bg-white
+          .container.px-4.py-3
+            .row.justify-content-start.align-items-center
+              .col-lg-auto
+                img.logo-footer(
+                  src="@/assets/portada/logo-footer.png"
+                  alt="Logo Tecnológica del Oriente"
+                )
+              .col-lg.px-0.d-none.d-lg-block
+                p.footer-text.mb-0 Todo el contenido de este curso es propiedad intelectual de Corporación Tecnológica del Oriente y está protegido por derechos de autor. No puede ser reproducido, distribuido, modificado ni compartido sin su autorización por escrito.
+                
+  </template>
 
 <script>
 export default {
@@ -146,11 +144,12 @@ export default {
 .iniciar-btn-container
   .iniciar-btn-text
     transition: all 0.25s ease-in-out
-    background-color: #9EF0FD !important
+    background-color: #88BBA9 !important
     color: #0B0A0A !important
   .icon
     transition: all 0.25s ease-in-out
-    background-color: #083E61 !important
+    background-color: #4A665C !important
+    color: #fff !important
   &:hover
     .icon
       transform: scale(1.06)

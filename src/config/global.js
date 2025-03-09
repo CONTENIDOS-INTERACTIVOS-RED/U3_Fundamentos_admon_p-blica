@@ -16,8 +16,8 @@ export default {
         imagen: require('@/assets/curso/banner-principal-decorativo-2.svg'),
       },
     ],
-    numeroUnidad: '1',
-    tituloUnidad: 'Titulo de la unidad',
+    numeroUnidad: '3',
+    tituloUnidad: 'Gobernanza y tendencias de lo público',
   },
   menuPrincipal: {
     menu: [
@@ -31,43 +31,47 @@ export default {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         numero: '1',
-        titulo: 'Unidad',
+        titulo: 'Gobernanza y gestión de redes',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '1.1',
-            titulo: 'Título de segundo nivel',
+            titulo:
+              'Enfoques teóricos sobre la gobernanza en la administración pública',
             hash: 't_1_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '1.2',
-            titulo: 'Acordeón',
+            titulo:
+              'Relación entre gobernanza y gestión eficiente de recursos estatales',
             hash: 't_1_2',
           },
           {
             icono: 'far fa-file-alt',
             numero: '1.3',
-            titulo: 'Slider',
+            titulo: 'Modelos de gobernanza en la administración pública',
             hash: 't_1_3',
           },
           {
             icono: 'far fa-file-alt',
             numero: '1.4',
-            titulo: 'Pestañas',
+            titulo: 'Tendencias globales en la implementación de la gobernanza',
             hash: 't_1_4',
           },
           {
             icono: 'far fa-file-alt',
             numero: '1.5',
-            titulo: 'Infografia interactiva',
+            titulo:
+              ' La gobernanza multinivel y la descentralización del poder',
             hash: 't_1_5',
           },
           {
             icono: 'far fa-file-alt',
             numero: '1.6',
-            titulo: 'Infografia interactiva',
+            titulo:
+              'La gestión de redes como estrategia para la articulación interinstitucional y la participación ciudadana',
             hash: 't_1_6',
           },
         ],
@@ -76,59 +80,21 @@ export default {
         nombreRuta: 'tema2',
         icono: 'far fa-file-alt',
         numero: '2',
-        titulo: 'Unidad',
+        titulo:
+          'Gestión pública por procesos vs. gestión pública por resultados',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '2.1',
-            titulo: 'Texto destacado',
+            titulo: 'Gestión pública basada en procesos',
             hash: 't_2_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '2.2',
-            titulo: 'Llamado a la acción - Recursos externos',
+            titulo: 'Gestión pública orientada a resultados',
             hash: 't_2_2',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '2.3',
-            titulo: 'Audios',
-            hash: 't_2_3',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '2.4',
-            titulo: 'Listado',
-            hash: 't_2_4',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '2.5',
-            titulo: 'Línea de tiempo',
-            hash: 't_2_5',
-          },
-        ],
-      },
-      {
-        nombreRuta: 'tema3',
-        icono: 'far fa-file-alt',
-        numero: '3',
-        titulo: 'Unidad',
-        desarrolloContenidos: true,
-        subMenu: [
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.1',
-            titulo: 'Carrusel',
-            hash: 't_3_1',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.2',
-            titulo: 'Tablas',
-            hash: 't_3_2',
           },
         ],
       },
@@ -170,109 +136,98 @@ export default {
   referencias: [
     {
       referencia:
-        'Zlackman, C. (2012). 100 años de moda. Sistema de Bibliotecas SENA:',
+        'Aguilar, L. F. (2014). Gobernanza y gestión pública: (ed.). FCE - Fondo de Cultura Económica.',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/109360',
+    },
+    {
+      referencia:
+        'Lasagna, M. (2013). Innovación pública: un modelo de aportación de valor: (ed.). RIL editores.',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/67279',
+    },
+    {
+      referencia:
+        'Peña, L. (2013). Ética y servicio público: ( ed.). Plaza y Valdés (España).',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/43378',
+    },
+    {
+      referencia:
+        'Rovira, A. (Coord.). (2013). Gobernanza democrática: ( ed.). Marcial Pons Ediciones Jurídicas y Sociales.',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/101852',
+    },
+    {
+      referencia:
+        'Departamento Nacional de Planeación. (sf). Herramientas de Innovación Pública.',
       link:
-        'https://sena-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=sena_aleph000060086&vid=SENA&search_scope=sena_completo&tab=sena_completo&lang=es_ES&context=L',
+        'https://www.dnp.gov.co/LaEntidad_/subdireccion-general-prospectiva-desarrollo-nacional/direccion-gobierno-ddhh-paz/Paginas/herramientas-de-innovacion-publica.aspx',
     },
     {
       referencia:
-        'Castellanos, O., Fumeque A., y Ramirez D. (2011). Análisis de tendencias: de la información hacia la innovación. Universidad Nacional de Colombia. Sistema de Bibliotecas SENA:',
+        'Departamento Nacional de Planeación. (sf). Sobre innovación pública.',
       link:
-        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_aleph000007947',
+        'https://www.dnp.gov.co/LaEntidad_/subdireccion-general-prospectiva-desarrollo-nacional/direccion-gobierno-ddhh-paz/Paginas/sobre-innovacion-publica.aspx',
     },
     {
       referencia:
-        '<em>Harpersbazaar</em>. (2019). La ropa que eliges afecta a tu estado de ánimo y cerebro, según expertos. En arpersbazaar.mx.',
-    },
-    {
-      referencia:
-        'Lafuente M., Navarro J., y Navarro J. (2005). Ilustración de moda. Sistema de Bibliotecas SENA',
+        'Procuraduría General de la Nación. (sf). Mecanismos de control y rendición de cuentas en el sector público.',
       link:
-        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_aleph000025549',
-    },
-    {
-      referencia:
-        'Laver, J.,  Albizua, H., y Fortea, B. (1990). Breve historia del traje y la moda. Sistema de Bibliotecas SENA.',
-    },
-    {
-      referencia:
-        'Navarro, J.,  y Lafuente, M. (2010). Ilustración de moda: dibujo plano. Sistema de Bibliotecas SENA:',
-      link:
-        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/q6j6k0/sena_aleph000023241',
-    },
-    {
-      referencia:
-        'Áciedad Americana de Ensayos y Materiales (ASTM). (2003). Textiles. Editorial Staff. [Book]. Sistema de Bibliotecas SENA.',
-      link:
-        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_aleph000051551',
-    },
-    {
-      referencia:
-        'Szkutnicka, B., Cuenca, C., Koyama, A. (2010). El dibujo técnico de moda paso a paso. Sistema de Bibliotecas SENA.',
-      link:
-        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_aleph000057728',
+        'https://www.dnp.gov.co/LaEntidad_/Direccion-general/oficina-asesora-planeacion/Paginas/mecanismos-control-rendicion-cuentas.aspx',
     },
   ],
   glosario: [
     {
-      termino: 'MoodBoard',
+      termino: 'Administración pública',
       significado:
-        'su traducción literal es mapa de inspiración y aunque su uso está muy asociado al ámbito de la decoración de interiores o la moda, <br/>realmente se utiliza en entornos creativos muy diversos, desde el diseño de productos o servicios al audiovisual o el diseño gráfico.',
+        'Conjunto de instituciones y procesos que gestionan los recursos y servicios estatales para satisfacer las necesidades de la ciudadanía.',
     },
     {
-      termino: '<em>Suftware</em>',
+      termino: 'Articulación interinstitucional',
       significado:
-        'término informático que hace referencia a un programa o conjunto de programas de cómputo, así como datos, procedimientos y pautas que permiten realizar distintas tareas en un sistema informático.',
+        'Coordinación entre diferentes entidades públicas y privadas para lograr objetivos comunes en la gestión gubernamental.',
     },
     {
-      termino: 'Pirognóstico',
+      termino: 'Centralización',
       significado:
-        'ensayo sin componentes reactivos, quiere decir, reconocimiento de los componentes, mediante la aplicación adecuada del fuego.',
+        'Modelo administrativo en el que las decisiones y la gestión se concentran en una autoridad o nivel gubernamental único.',
     },
     {
-      termino: '<em>Áectores</em>',
+      termino: 'Descentralización',
       significado:
-        'en software de diseño, son líneas que se crean y permiten, expandir, modificar, al tamaño que sea sin pixelarse porque se unen por coordenadas matemáticas del programa y no se generan por números fijos.',
+        'Proceso mediante el cual se otorgan competencias y recursos a los gobiernos locales o regionales, promoviendo la autonomía.',
     },
     {
-      termino: 'Moda',
+      termino: 'Eficiencia',
       significado:
-        'hábito repetitivo que identifica a una persona, una especie de presión social, que debe consumir, utilizar o hacer.',
+        'Capacidad de obtener resultados deseados con el mínimo uso de recursos posibles en la gestión pública.',
     },
     {
-      termino: 'Diseña',
+      termino: 'Ética en la gestión pública',
       significado:
-        'actividad creativa orientada a soluciones idóneas a ciertas problemáticas.',
+        'Conjunto de valores y principios que guían el actuar de los funcionarios públicos en el ejercicio de sus funciones.',
     },
     {
-      termino: 'DIseño',
+      termino: 'Gobernabilidad',
       significado:
-        'actividad creativa orientada a soluciones idóneas a ciertas problemáticas.',
+        'Capacidad del gobierno para implementar políticas públicas y mantener la estabilidad institucional.',
     },
     {
-      termino: 'Tipología',
+      termino: 'Gobernanza',
       significado:
-        'estudio de los tipos o modelos que se usan para clasificar en diversas ciencias o disciplinas.',
+        'Enfoque colaborativo de gestión pública basado en la participación ciudadana y la articulación de múltiples actores.',
     },
     {
-      termino: 'Bidimensional',
+      termino: 'Indicadores de desempeño',
       significado:
-        'que se representa según su altura y su anchura y no su profundidad.',
+        'Herramientas que miden el éxito de las políticas y programas públicos en términos de resultados obtenidos.',
     },
     {
-      termino: 'Interés Inferior del menor',
+      termino: 'Innovación pública',
       significado:
-        'término informático que hace referencia a un programa o conjunto de programas de cómputo, así como datos, procedimientos y pautas que permiten realizar distintas tareas en un sistema informático.',
+        'Proceso de introducción de nuevas ideas, tecnologías y métodos para mejorar los servicios y la gestión gubernamental.',
     },
     {
-      termino: 'Interseccionalidad',
+      termino: 'Participación ciudadana',
       significado:
-        'término informático que hace referencia a un programa o conjunto de programas de cómputo, así como datos, procedimientos y pautas que permiten realizar distintas tareas en un sistema informático.',
-    },
-    {
-      termino: 'Interés superior del menor',
-      significado:
-        'término informático que hace referencia a un programa o conjunto de programas de cómputo, así como datos, procedimientos y pautas que permiten realizar distintas tareas en un sistema informático.',
+        'Proceso mediante el cual los ciudadanos intervienen activamente en la formulación, implementación y evaluación de políticas públicas.',
     },
   ],
   complementario: [

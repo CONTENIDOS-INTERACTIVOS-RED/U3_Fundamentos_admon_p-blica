@@ -52,14 +52,14 @@ export default {
 .linea-tiempo-d__item__content__title
   padding: 28px
   border-radius: 5px 5px 0px 0px
-  background-color: #FEF8E7
+  background-color: #FCF3F0
 .linea-tiempo-d__item__content__title.active
-  background-color: #F9C623
+  background-color: #E89076
 .linea-tiempo-d__item__content__slot
   border-radius: 0px 0px 5px 5px
-  background-color: #FDEDBB
+  background-color: #F7DDD5
 .linea-tiempo-d__item__number
-  background-color: #FEF8E7
+  background-color: #FCF3F0
 .linea-tiempo-d__item--selected .linea-tiempo-d__item__number
-  background-color: #F9C623 !important
+  background-color: #E89076 !important
 </style>
