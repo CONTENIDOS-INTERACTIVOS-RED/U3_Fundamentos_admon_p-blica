@@ -49,9 +49,9 @@
         div.px-5
           p.mb-4 Para estudiar la temática, lo invitamos a escuchar el siguiente podcast.
           TarjetaAudio.color-primario.bg-white.mb-3(
-            texto='Texto descriptivo del audio'
+            texto='Gestión pública basada en procesos'
             tiempo
-            :audio="require('../../assets/componentes/audios/audio-ej.mp3')"
+            :audio="require('../../assets/curso/podcast1.mp3')"
             @audio-hover='mostrarIndicadorTarjetaAudio = false'
           )
       .d-none.d-xl-block.col-2.px-0
@@ -218,6 +218,13 @@
           a.d-flex.me-auto.w-fit.bg-white.box-shadow.cursor-pointer(data-aos="fade-up" :href="obtenerLink('/downloads/.pdf')" target="_blank")
             img.h-100(style="width: 48px" src='@/assets/componentes/pdf-icon-square.svg', alt='Texto que describa la imagen')
             p.text-small.fs-14px.my-auto.px-2 <strong>Anexo.</strong> Innovación pública y ética en la gestión pública
+   
+    .bg-full-width.border-top.actividad.bg-color-actividad
+      .p-4.p-md-5
+        #Actividad                
+          <Actividad :cuestionario="cuestionario"/>
+    
+   
     .bg-full-width.border-top-9-azul
       .px-5.pt-5.pb-0
         h2 Material complementario
@@ -241,10 +248,189 @@
 <script>
 import BannerInterno from '../../components/plantilla/BannerInterno'
 export default {
-  name: 'Tema2',
+  name: 'Tema3',
   components: {
     BannerInterno,
   },
+  data: () => ({
+    cuestionario: {
+      tema: 'Gestión pública por procesos vs. gestión pública por resultados',
+      titulo: 'Ponte a prueba',
+      introduccion:
+        'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
+      barajarPreguntas: true,
+      preguntas: [
+        {
+          id: 1,
+          texto:
+            '¿Qué distingue a la gobernanza de la gobernabilidad en el contexto de la administración pública?',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'La gobernabilidad se enfoca en el uso de redes, mientras que la gobernanza en el control centralizado.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'La gobernanza implica procesos colaborativos y descentralizados, mientras que la gobernabilidad se refiere a la capacidad de un gobierno para ejercer autoridad y control.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto:
+                'La gobernanza es exclusiva del sector privado, mientras que la gobernabilidad se centra en el sector público.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Ambas son conceptos sin diferencias relevantes.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Correcto! La gobernanza implica procesos colaborativos mientras que la gobernabilidad se refiere a la capacidad de ejercer autoridad.',
+          mensaje_incorrecto:
+            'Incorrecto. Revisa las diferencias entre gobernanza y gobernabilidad en el contexto de la administración pública.',
+        },
+        {
+          id: 2,
+          texto:
+            '¿Cuál es un beneficio clave de la gestión de redes en la administración pública?',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Mayor centralización de las decisiones.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Aumento de la eficiencia en la formulación e implementación de políticas públicas.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Eliminación de la necesidad de participación ciudadana.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Reducción del número de instituciones públicas.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Correcto! La gestión de redes mejora la eficiencia en la formulación e implementación de políticas públicas.',
+          mensaje_incorrecto:
+            'Incorrecto. La gestión de redes tiene como beneficio clave el aumento de la eficiencia en las políticas públicas.',
+        },
+        {
+          id: 3,
+          texto:
+            'En la gestión pública por resultados, ¿qué herramienta se utiliza principalmente para medir la efectividad de las políticas públicas?',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Tablas comparativas de procesos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Indicadores de desempeño.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Manuales de procedimientos administrativos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Informes narrativos.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Correcto! Los indicadores de desempeño son la principal herramienta para medir la efectividad de las políticas públicas.',
+          mensaje_incorrecto:
+            'Incorrecto. Los indicadores de desempeño son la herramienta principal en la gestión por resultados.',
+        },
+        {
+          id: 4,
+          texto:
+            '¿Qué principio ético en la administración pública se asocia directamente con la rendición de cuentas?',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Imparcialidad.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Transparencia.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Responsabilidad.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Justicia.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Correcto! La responsabilidad es el principio ético directamente asociado con la rendición de cuentas.',
+          mensaje_incorrecto:
+            'Incorrecto. La responsabilidad es el principio ético que se asocia directamente con la rendición de cuentas.',
+        },
+        {
+          id: 5,
+          texto:
+            '¿Cuál es un desafío común en la implementación de la innovación pública en Colombia?',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Resistencia al cambio en la estructura gubernamental.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Falta de interés en el uso de tecnología.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Incremento de costos operativos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Ausencia de indicadores de desempeño.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Correcto! La resistencia al cambio en la estructura gubernamental es un desafío común en la implementación de la innovación pública.',
+          mensaje_incorrecto:
+            'Incorrecto. La resistencia al cambio es uno de los principales desafíos en la implementación de la innovación pública.',
+        },
+      ],
+      mensaje_final_aprobado:
+        '¡Felicitaciones! Has demostrado un buen entendimiento de los conceptos de gestión pública.',
+      mensaje_final_reprobado:
+        'Te recomendamos repasar los conceptos de gestión pública antes de intentarlo nuevamente.',
+    },
+  }),
   mounted() {
     this.$nextTick(() => {
       this.$aosRefresh()
@@ -253,4 +439,8 @@ export default {
 }
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+.material-complementario
+  padding-top: 3rem
+  border-top: 9px solid $color-sistema-e
+</style>
